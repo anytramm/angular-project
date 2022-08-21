@@ -1,0 +1,8 @@
+<ul>
+	<li 
+		*ngFor="let element of menuItems"
+		[routerLink]="element.url">
+		<mat-icon>{{element.matIcon}}</mat-icon>
+		{{element.name}}
+	</li>
+</ul>

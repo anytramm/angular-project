@@ -1,3 +1,21 @@
 mat-drawer-container {
-    min-height: 100vh;
+	min-height: 100vh;
+}
+
+.spinner {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	opacity: 0.3;
+	mat-spinner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 5;
+	}
 }
