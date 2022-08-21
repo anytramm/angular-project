@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { NetworkInterceptor } from './core/interceptor/network.interceptor';
 import { SharedModule } from './shared/shared.module';
+import { MatSnackBarModule, MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SharedModule } from './shared/shared.module';
     HttpClientModule,
     MatSidenavModule,
     MatProgressSpinnerModule,
-    SharedModule
+    SharedModule,
+    MatSnackBarModule 
   ],
   providers: [    
     {

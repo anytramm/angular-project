@@ -1,5 +1,8 @@
 mat-drawer-container {
 	min-height: 100vh;
+	mat-drawer-content {
+		padding: 20px 50px;
+	}
 }
 
 .spinner {
@@ -10,7 +13,7 @@ mat-drawer-container {
 	width: 100%;
 	min-height: 100vh;
 	height: 100%;
-	opacity: 0.3;
+	backdrop-filter: blur(2px);
 	mat-spinner {
 		position: absolute;
 		top: 50%;

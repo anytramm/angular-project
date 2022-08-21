@@ -16,11 +16,11 @@ export class PlayerComponent implements OnInit {
     private router: Router
   ) { }
 
-  public ngOnInit(): void {
+  public ngOnInit(): void { 
     this.playerData = this.route.snapshot.data['player'];
 
     if (!this.playerData) {
-      this.router.navigate(['']);
+      this.router.navigate(['players']);
     }
   }
 

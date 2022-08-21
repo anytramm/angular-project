@@ -9,11 +9,13 @@ const routes: Routes = [
   },
   {
     path: 'players',
-    loadChildren: () => import('./components/players-list/players-list.module').then(m => m.PlayersListModule)
+    loadChildren: () => import('./components/players-list/players-list.module').then(m => m.PlayersListModule),
+    title: 'NBA Players'
   },
   {
     path: 'teams',
-    loadChildren: () => import('./components/teams/teams.module').then(m => m.TeamsModule)
+    loadChildren: () => import('./components/teams/teams.module').then(m => m.TeamsModule),
+    title: 'NBA Teams'
   }
 ];
 

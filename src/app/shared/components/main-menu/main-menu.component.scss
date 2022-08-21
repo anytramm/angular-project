@@ -1,12 +1,16 @@
 ul {
-    // margin: 10px auto;
-    padding: 20px 10px;
-    li {
-        list-style: none;
-        border-radius: 2px;
-        padding: 20px 50px;
-        &:hover {
-            background-color: #9c27b0;
-        }
-    }
+	padding: 20px 10px;
+	li {
+		margin: 5px 0;
+		list-style: none;
+		border-radius: 2px;
+		padding: 20px 50px;
+		cursor: pointer;
+		&:hover, &.active {
+			background-color: #9c27b0;
+		}
+		p {
+			margin: 0;
+		}
+	}
 }

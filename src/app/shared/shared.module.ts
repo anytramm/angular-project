@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const COMPONENTS = [
   MainMenuComponent
@@ -14,7 +15,8 @@ const COMPONENTS = [
   imports: [
     CommonModule,
     RouterModule,
-    MatIconModule
+    MatIconModule,
+    FlexLayoutModule
   ]
 })
 export class SharedModule { }
